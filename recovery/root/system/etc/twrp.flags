@@ -39,3 +39,6 @@
 /metadata           ext4      /dev/block/by-name/metadata           flags=display="metadata";backup=1
 /keydata            ext4      /dev/block/by-name/keydata            flags=display="keydata";backup=1
 /keyrefuge          f2fs      /dev/block/by-name/keyrefuge          flags=display="keyrefuge";backup=1
+
+# External
+/usb_otg		vfat		/dev/block/sdd1 		/dev/block/sdd				flags=display="USB OTG";storage;wipeingui;removable
