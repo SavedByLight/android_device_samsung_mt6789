@@ -147,6 +147,7 @@ TW_INCLUDE_REPACKTOOLS := true
 TW_USE_LEGACY_BATTERY_SERVICES := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone31/temp"
+TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/battery/capacity
 
 # USB 
 TW_USE_NEW_MINADBD := true 
