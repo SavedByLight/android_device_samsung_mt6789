@@ -144,6 +144,7 @@ TW_NO_BIND_SYSTEM := true
 TW_HAS_DOWNLOAD_MODE := true 
 TW_INCLUDE_LPTOOLS := true
 TW_INCLUDE_REPACKTOOLS := true
+TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone31/temp"
 
 # USB 
 TW_USE_NEW_MINADBD := true 
@@ -173,7 +174,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_SYSTEM_DLKM := system_dlkm
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
-
 
 # APEX
 #DEXPREOPT_GENERATE_APEX_IMAGE := true
