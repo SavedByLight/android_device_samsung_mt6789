@@ -3,6 +3,11 @@ TARGET_MT6789_COMMON := true
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 32
 
+# Boot control HAL
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.2-mtkimpl \
+    android.hardware.boot@1.2-mtkimpl.recovery
+
 # Dynamic
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
