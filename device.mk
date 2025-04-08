@@ -29,3 +29,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 32
+
+# MTK plpath utils
+PRODUCT_PACKAGES += \
+    mtk_plpath_utils \
+    mtk_plpath_utils.recovery
