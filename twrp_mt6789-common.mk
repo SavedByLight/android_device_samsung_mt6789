@@ -9,6 +9,6 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 $(call inherit-product, device/samsung/mt6789-common/device.mk)
 
 # Enable project quotas and casefolding for emulated storage without sdcardfs
-$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/mt6789-common/recovery/root,recovery/root)
