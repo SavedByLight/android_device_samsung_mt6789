@@ -37,9 +37,9 @@ BOARD_USES_MTK_HARDWARE := true
 BOARD_NO_RADIOIMAGE := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_SUPPRESS_SECURE_ERASE := true
-#TARGET_CPU_SMP := true
-#ENABLE_CPUSETS := true
-#ENABLE_SCHEDBOOST := true
+TARGET_CPU_SMP := true
+ENABLE_CPUSETS := true
+ENABLE_SCHEDBOOST := true
 
 # Display
 TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
@@ -52,7 +52,7 @@ TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel/brightness"
 # Kernel
 BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x3fff8000
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 loop.max_part=7
+BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive bootopt=64S3,32N2,64N2 loop.max_part=7
 BOARD_KERNEL_PAGESIZE := 4096
 
 # mkbootimg
@@ -136,9 +136,9 @@ TW_USE_TOOLBOX := true
 TW_EXCLUDE_APEX := true
 TW_NO_BIND_SYSTEM := true
 TW_HAS_DOWNLOAD_MODE := true 
-#TW_INCLUDE_LPTOOLS := true
-#TW_INCLUDE_REPACKTOOLS := true
-#TW_USE_LEGACY_BATTERY_SERVICES := true
+TW_INCLUDE_LPTOOLS := true
+TW_INCLUDE_REPACKTOOLS := true
+TW_USE_LEGACY_BATTERY_SERVICES := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone31/temp"
 TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/battery/capacity
@@ -150,7 +150,7 @@ TW_INCLUDE_FASTBOOTD := true
 
 # Modules
 #TW_LOAD_VENDOR_MODULES := true
-#TW_LOAD_VENDOR_BOOT_MODULES := true
+TW_LOAD_VENDOR_BOOT_MODULES := true
 TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/lib/modules)\")
 #BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
